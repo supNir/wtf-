@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<link rel="stylesheet" href="/static/css/style.css"
+<h3>Размещение по каютам</h3>
+{% for user in user_list%}
+<p>{{ user }} - Каюта № {{ loop.index }} {% if loop.first %} - капитан корабля {% endif %}
+</p>
+{% endfor %}
+{% endblock %}
